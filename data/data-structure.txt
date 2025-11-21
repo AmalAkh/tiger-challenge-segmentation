@@ -1,0 +1,31 @@
+training/
+	|_wsibulk/
+	|	|__annotations-tumor-bulk/				* manual annotations of "tumor bulk" regions (see https://tiger.grand-challenge.org/Data/ for details)
+	|	|	|___masks/							* annotations in multiresolution TIF format
+	|	|	|___xmls/							* annotations in XML format
+	|	|__images/								* whole-slide images
+	|	|__tissue-masks/						* tissue-background masks
+	|
+	|_wsirois/
+	|	|__roi-level-annotations/				* manual annotations of tissue and cells on cropped reegions of interest
+	|	|	|___tissue-bcss/					* manual annotations of tissue only in larger ROIs adapted from the BCSS project
+	|	|	|	|____images/					* images in PNG format of ROIs extracted from whole-slide images (TCGA data only)
+	|	|	|	|____masks/						* manual annotations of tissue in ROIs
+	|	|	|___tissue-cells/					* manual annotations of tissue and cells ROIs adapted from the NuCLS+BCSS project and from RUMC and JB data
+	|	|		|____images/					* images in PNG format of ROIs extracted from whole-slide images (TCGA + RUMC + JB)
+	|	|		|____masks/						* manual annotations of tissue in ROIs
+	|	|		|____tiger-coco.json			* manual annotations of cells in ROIs as bounding boxes in COCO format
+	|	|__wsi-level-annotations/				* manual annotations of tissue and cells on whole-slide images
+	|		|___annotations-tissue-bcss-masks/	* manual annotations (in TIF format) of tissue only adapted from the BCSS project
+	|		|___annotations-tissue-bcss-xmls/	* manual annotations (in XML format) of tissue only adapted from the BCSS project
+	|		|___annotations-tissue-cells-masks/	* manual annotations (in TIF format) of tissue and cells from RUMC and JB + data adapted from the NuCLS+BCSS project 
+	|		|___annotations-tissue-cells-xmls/	* manual annotations (in XML format) of tissue and cells from RUMC and JB + data adapted from the NuCLS+BCSS project 
+	|		|___images/							* whole-slide images
+	|		|___tissue-masks/					* tissue-background masks
+	|
+	|_wsitils/									
+	|	|__images/								* whole-slide images
+	|	|__tissue-masks/						* tissue-background masks
+	|	|__tiger-tils-scores-wsitils.csv		* CSV file containing TILs scores for each WSI
+	|
+	|_data-structure.txt						* this file
